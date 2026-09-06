@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<ItemGroup>
+  <Content Include="modinfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Content Include="modicon.png" Condition="Exists('modicon.png')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Folder Include="assets\" />
+</ItemGroup>
+
+<ItemGroup>
+  <Reference Include="VintagestoryAPI">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\VintagestoryAPI.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VintagestoryLib">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\VintagestoryLib.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+</ItemGroup>
+
+</Project>

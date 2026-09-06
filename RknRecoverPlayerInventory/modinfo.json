@@ -1,0 +1,16 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "rknrecoverplayerinventory",
+    "name": "Recover Player Inventory",
+    "authors": [
+        "Runekn",
+        "SiiMeR"
+    ],
+    "description": "Recover inventory items from offline players",
+    "version": "1.0.0",
+    "side": "Server",
+    "dependencies": {
+        "game": "1.22.0"
+    }
+}
